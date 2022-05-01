@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -14,14 +14,17 @@
   <link rel="preload" href="/SFProDisplay.OTF" as="font" />
   <link rel="preload" href="/SFProText.ttf" as="font" />
   <body>
-    <section class="first">
+    <div class="first">
       <div class="first-wrapper">
         <ul class="first-background">
           <li class="first-logo"><img src="./img/logo.png" alt="" /></li>
+          <li class="first-logo-min">
+            <img src="./img/logo-min.png" alt="" />
+          </li>
           <li class="first-tagline">CRM, яка допомагає досягти успіху!</li>
         </ul>
       </div>
-    </section>
+    </div>
     <section class="second">
       <div class="header">
         <ul class="header-wrap">
@@ -63,9 +66,11 @@
         </ul>
       </div>
       <div class="third-gradient"></div>
-      <img class="third-elipse1" src="./img/elipse31.png" alt="" />
-      <img class="third-elipse2" src="./img/elipse32.png" alt="" />
-      <img class="third-screen" src="./img/screen.png" alt="" />
+      <div class="third-img-wrap">
+        <img class="third-elipse1" src="./img/elipse31.png" alt="" />
+        <img class="third-elipse2" src="./img/elipse32.png" alt="" />
+        <img class="third-screen" src="./img/screen.png" alt="" />
+      </div>
       <h1 class="third-h1">Ми розробляємо виміряні та перевірені процеси:</h1>
       <ul class="third-wrap-text">
         <li class="third-text">Впроваджує CRM-систему в організації</li>
@@ -198,8 +203,10 @@
         </ul>
       </div>
       <div class="seventh-gradient"></div>
-      <img class="seventh-img" src="./img/barber1.png" alt="" />
-      <img class="seventh-img" src="./img/barber2.png" alt="" />
+      <div class="seven-img-wrap">
+        <img class="seventh-img" src="./img/barber1.png" alt="" />
+        <img class="seventh-img" src="./img/barber2.png" alt="" />
+      </div>
       <h1 class="seventh-h1">Керуйте салоном легко!</h1>
       <div class="seventh-text-wrap">
         <p class="seventh-text">
@@ -274,3 +281,4 @@
     </section>
   </body>
 </html>
+
