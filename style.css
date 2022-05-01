@@ -1,0 +1,561 @@
+@font-face {
+  font-family: SF Pro Display;
+  src: url(./fonts/sfprodisplay.woff2);
+  font-family: SF Pro Text;
+  src: url(./fonts/sfprotext.woff2);
+}
+
+body {
+  /* font-family: SF Pro Display, SF Pro Text, sans-serif; */
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  height: 1080px;
+  width: 1920px;
+  margin-bottom: 10px;
+}
+
+/* ==========First Page========== */
+
+.first-wrapper {
+  text-align: center;
+}
+.first-background {
+  background-color: #2c2c2c;
+  height: 1080px;
+  padding-top: 460px;
+}
+
+.first-tagline {
+  font-family: SF Pro Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 45px;
+  color: #ffffff;
+  opacity: 0.6;
+  margin-top: 33px;
+}
+
+/* ==========Second Page========== */
+
+.second {
+  position: relative;
+  padding-left: 82px;
+  padding-right: 82px;
+  background-color: #010101;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-top: 67px;
+  margin-bottom: 0;
+}
+
+.header-logo {
+  align-items: center;
+}
+
+.header-trident {
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.second-hero {
+  position: absolute;
+  width: 1462px;
+  height: 1080px;
+  left: 645px;
+  top: 0px;
+}
+
+.second-wrap {
+  position: absolute;
+  margin-top: 217px;
+  padding-left: 18px;
+}
+
+.second-h2 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.4;
+  width: 744px;
+  margin: 0;
+}
+
+.second-h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #ffc701;
+  width: 1010px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.second-text {
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 44px;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 735px;
+  margin-top: 46px;
+}
+
+/* ==========Third Page========== */
+
+.third {
+  position: relative;
+  background-color: #2c2c2c;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+.third-gradient {
+  position: absolute;
+  width: 1266px;
+  height: 1129px;
+  bottom: -157px;
+  right: -156px;
+  background: linear-gradient(180deg, #ffc701 0%, #3c62e9 100%);
+  opacity: 0.5;
+  filter: blur(200px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.third-elipse1 {
+  position: absolute;
+  top: 80px;
+  right: 85px;
+}
+.third-elipse2 {
+  position: absolute;
+  top: 59px;
+  right: 72px;
+}
+.third-screen {
+  position: absolute;
+  top: 138px;
+  right: 418px;
+}
+.third-h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #ffc701;
+  width: 713px;
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+
+.third-wrap-text {
+  width: 1000px;
+  padding-left: 25px;
+  margin-top: 30px;
+}
+
+.third-text {
+  list-style-type: disc;
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 44px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+/* ==========Fourth Page========== */
+
+.fourth {
+  position: relative;
+  background-color: #2c2c2c;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+.fourth-gradient {
+  position: absolute;
+  width: 1266px;
+  height: 1129px;
+  bottom: -157px;
+  right: -156px;
+  background: linear-gradient(180deg, #ffc701 0%, #3c62e9 100%);
+  opacity: 0.5;
+  filter: blur(200px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.fourth-screen1 {
+  position: absolute;
+  top: 150px;
+  right: 167px;
+}
+.fourth-screen2 {
+  position: absolute;
+  top: 420px;
+  right: 900px;
+}
+.fourth-screen3 {
+  position: absolute;
+  top: 456px;
+  right: 52px;
+}
+.fourth-h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #ffc701;
+  width: 475px;
+  margin-top: 122px;
+  margin-bottom: 0;
+}
+.fourth-text {
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 44px;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 608px;
+  margin-top: 30px;
+}
+
+/* ==========Fifth Page========== */
+
+.fifth {
+  position: relative;
+  background-color: #2c2c2c;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+.fifth-gradient {
+  position: absolute;
+  width: 1266px;
+  height: 1129px;
+  bottom: -157px;
+  right: -156px;
+  background: linear-gradient(180deg, #ffc701 0%, #3c62e9 100%);
+  opacity: 0.5;
+  filter: blur(200px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.fifth-companies {
+  position: absolute;
+  top: 214px;
+  right: 170px;
+}
+.fifth-h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #ffc701;
+  width: 575px;
+  margin-top: 122px;
+  margin-bottom: 0;
+}
+.fifth-text {
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 44px;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 700px;
+  margin-top: 30px;
+}
+
+/* ==========Sixth Page========== */
+
+.sixth {
+  position: relative;
+  background-color: #2c2c2c;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+.sixth-gradient {
+  position: absolute;
+  width: 1266px;
+  height: 1129px;
+  bottom: -157px;
+  right: -156px;
+  background: linear-gradient(180deg, #ffc701 0%, #3c62e9 100%);
+  opacity: 0.5;
+  filter: blur(200px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.sixth-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.sixth-wrap-text {
+  /* width: 500px; */
+  margin-top: 118px;
+}
+.sixth-h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #ffc701;
+  width: 819px;
+  margin: 0;
+}
+.sixth-text {
+  position: relative;
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 44px;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 665px;
+  margin-top: 30px;
+}
+.sixth-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 168px;
+}
+.sixth-icons-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 118px;
+}
+.sixth-icons-wrap:not(:first-child) {
+  margin-top: 80px;
+}
+
+.sixth-icons-text {
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-left: 16px;
+}
+.sixth-bmw {
+  position: absolute;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    #2c2c2c 100%
+  );
+  opacity: 0.5;
+  bottom: 0;
+  -webkit-mask-image: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+.sixth-audi {
+  position: absolute;
+  background: radial-gradient(
+    52.96% 52.96% at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    #2c2c2c 100%
+  );
+  opacity: 0.5;
+  bottom: 0;
+  right: 182px;
+  -webkit-mask-image: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+}
+
+/* ==========Seventh Page========== */
+
+.seventh {
+  position: relative;
+  background-color: #2c2c2c;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+.seventh-gradient {
+  position: absolute;
+  width: 1266px;
+  height: 1129px;
+  bottom: -157px;
+  right: -156px;
+  background: linear-gradient(180deg, #ffc701 0%, #3c62e9 100%);
+  opacity: 0.34;
+  filter: blur(400px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.seventh-img {
+  margin-top: 90px;
+  border-radius: 4px;
+}
+.seventh-h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #ffc701;
+  margin-top: 56px;
+  margin-bottom: 0;
+}
+
+.seventh-text-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seventh-text {
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 44px;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 500px;
+  margin-top: 50px;
+}
+/* ==========Eighth Page========== */
+
+.eighth {
+  position: relative;
+  background-color: #2c2c2c;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+
+.eighth-gradient {
+  width: 897px;
+  height: 897px;
+  position: absolute;
+  top: 80px;
+  right: 85px;
+  background: linear-gradient(180deg, #ffc701 0%, #3c62e9 100%);
+  opacity: 0.34;
+  filter: blur(200px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.eighth-h1 {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #fdc604;
+  margin-top: 122px;
+  margin-bottom: 18px;
+}
+.eighth-text {
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 44px;
+  color: #ffffff;
+  opacity: 0.7;
+  width: 604px;
+}
+.eighth-img1 {
+  position: absolute;
+  top: 362px;
+  right: 60px;
+}
+.eighth-img2 {
+  position: absolute;
+  top: 730px;
+  right: 789px;
+}
+
+/* ==========Ninth Page========== */
+
+.ninth {
+  position: relative;
+  background-color: #2c2c2c;
+  padding-left: 82px;
+  padding-right: 82px;
+  z-index: -1;
+}
+
+.ninth-gradient {
+  position: absolute;
+  width: 1266px;
+  height: 1129px;
+  bottom: -157px;
+  right: -156px;
+  background: linear-gradient(180deg, #ffc701 0%, #3c62e9 100%);
+  opacity: 0.34;
+  filter: blur(200px);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.ninth-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.logo {
+  z-index: 1;
+}
+.ninth-text-wrap {
+  width: 880px;
+  margin-right: 0;
+  margin-left: 880px;
+}
+.ninth-text {
+  /* font-family: 'SF Pro Text'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 72px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.text1 {
+  margin-top: 90px;
+  margin-bottom: 0;
+}
+.text2 {
+  margin-top: 134px;
+  margin-bottom: 0;
+}
