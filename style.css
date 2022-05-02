@@ -7,6 +7,7 @@
 
 body {
   /* font-family: SF Pro Display, SF Pro Text, sans-serif; */
+  height: 100%;
   max-width: 100%;
   margin: 0;
 
@@ -21,8 +22,11 @@ height: 1080px;
   width: 100%;
   overflow-x: hidden;
   margin: 0;
+  
 }
-
+section::-webkit-scrollbar {
+    width: 0;
+}
 h1 {
   font-style: normal;
   font-weight: 700;
@@ -32,6 +36,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 0;
   margin-right: 20px;
+  max-width: 100%;
 }
 p {
   font-style: normal;
@@ -42,46 +47,12 @@ p {
   opacity: 0.7;
   /* filter: invert(50%); */
   z-index: 5;
+  max-width: 100%;
 }
-/* ==========First Page========== */
-
-.first-wrapper {
-  text-align: center;
-}
-.first-background {
-  background-color: #2c2c2c;
-  height: 1080px;
-  padding-top: 460px;
-  margin: 0;
-}
-
-.first-tagline {
-  font-family: SF Pro Display;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 45px;
-  color: #ffffff;
-  opacity: 0.6;
-  margin-top: 33px;
-}
-
-/* ==========Second Page========== */
-
-.second {
-  position: relative;
-  padding-left: 82px;
-  padding-right: 82px;
-  background-color: #010101;
-
-}
-
 .header {
   display: flex;
   justify-content: space-between;
 }
-
 .header-wrap {
   width: 100%;
   display: flex;
@@ -100,6 +71,62 @@ p {
   z-index: 1;
   opacity: 0.6;
 }
+
+@media screen and (max-width: 600px) {
+p, h1, h2 {
+  margin-right: 30px;
+  text-align: center;
+}
+
+}
+/* ==========First Page========== */
+
+.first-wrapper {
+  text-align: center;
+}
+.first-background {
+  background-color: #2c2c2c;
+  height: 1080px;
+  padding-top: 460px;
+  margin: 0;
+}
+.first-logo {
+  display: block;
+}
+.first-logo-mini {
+  display: none;
+}
+.first-tagline {
+  font-family: SF Pro Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 45px;
+  color: #ffffff;
+  opacity: 0.6;
+  margin-top: 33px;
+}
+
+@media screen and (max-width: 600px) {
+  .first-logo {
+    display: none;
+  }
+  .first-logo-mini {
+    display: block;
+  }
+}
+
+/* ==========Second Page========== */
+
+.second {
+  position: relative;
+  padding-left: 82px;
+  padding-right: 82px;
+  background-color: #010101;
+
+}
+
 
 .second-hero {
   position: absolute;
@@ -139,6 +166,13 @@ margin-left: 50%;
   margin-top: 46px;
 }
 
+@media screen and (max-width: 600px) {
+  .second {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 /* ==========Third Page========== */
 
 .third {
@@ -149,9 +183,9 @@ margin-left: 50%;
 }
 .third-gradient {
   position: absolute;
-  width: 1266px;
-  height: 1129px;
-  bottom: -157px;
+  width: 100%;
+  height: 100%;
+  bottom: -157px; 
   right: -156px;
   background: linear-gradient(180deg, #ffc701 0%, #3c62e9 100%);
   opacity: 0.5;
@@ -194,7 +228,15 @@ margin-left: 50%;
   color: #ffffff;
   opacity: 0.7;
 }
-
+@media screen and (max-width: 600px) {
+  .third {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .third-screen {
+display: none;
+  }
+}
 /* ==========Fourth Page========== */
 
 .fourth {
@@ -238,7 +280,28 @@ margin-left: 50%;
   max-width: 608px;
   margin-top: 30px;
 }
+@media screen and (max-width: 600px) {
+  .fourth {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .fourth-screen2 {
+display: none;
+  }
+  .fourth-screen3 {
+    display: none;
+  }
+  .fourth-screen1 {
+    left: 5%;
+    max-width: 90%;
+  }
+  .fourth-h1 {
+    margin-top: 68%;
+    margin-bottom: 0;
+    text-align: center;
+  }
 
+}
 /* ==========Fifth Page========== */
 
 .fifth {
@@ -274,7 +337,22 @@ margin-left: 50%;
   max-width: 700px;
   margin-top: 30px;
 }
+@media screen and (max-width: 600px) {
+  .fifth {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .fifth-companies {
+    left: 5%;
+    max-width: 90%;
+  }
+  .fifth-h1 {
+    margin-top: 115%;
+    margin-bottom: 0;
+    text-align: center;
+  }
 
+}
 /* ==========Sixth Page========== */
 
 .sixth {
@@ -364,7 +442,21 @@ margin-left: 50%;
     rgba(0, 0, 0, 0) 70%
   );
 }
-
+@media screen and (max-width: 600px) {
+  .sixth {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .sixth-icons-text {
+display: none;
+  }
+  .sixth-icons2 {
+    display: none;
+  }
+  .seventh-h1-h1, .seventh-text-wrap {
+    text-align: left;
+  }
+}
 /* ==========Seventh Page========== */
 
 .seventh {
@@ -403,6 +495,25 @@ margin-left: 50%;
   max-width: 500px;
   margin-top: 50px;
 }
+
+@media screen and (max-width: 600px) {
+  .seventh {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .seventh-img {
+    max-width: 100%;
+    left: 50%;
+    margin-top: 30px;
+  }
+  .seventh-icons2 {
+    display: none;
+  }
+  .seventh-text-wrap {
+    display: block;
+  }
+  
+}
 /* ==========Eighth Page========== */
 
 .eighth {
@@ -440,7 +551,23 @@ margin-left: 50%;
   top: 730px;
   right: 789px;
 }
+@media screen and (max-width: 600px) {
+  .eighth {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .eighth-img1 {
+    left: 5%;
+    max-width: 90%;
+    margin-top: 200%;
+    margin-bottom: 20px;
+  }
+  .eighth-img2 {
+display: none;
+  }
 
+
+}
 /* ==========Ninth Page========== */
 
 .ninth {
@@ -487,3 +614,28 @@ margin-left: 50%;
   margin-top: 134px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 600px) {
+  .ninth {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .flex-wrap {
+display: flex;
+flex-direction: column;
+
+
+}
+.text1 {
+  margin-top: 1500px;
+  left: 0;
+}
+.ninth-hero {
+  position: relative;
+}
+.ninth-text-wrap {
+
+
+  margin-left: 0;
+}
+  }
+
