@@ -14,8 +14,35 @@
   <link rel="preload" href="/SFProDisplay.OTF" as="font" />
   <link rel="preload" href="/SFProText.ttf" as="font" />
   <body>
-    <div>
-      <section class="first">
+    <header>
+      <div class="section-header" id="home">
+        <div class="header-wrap">
+            <div class="header-logo-item">
+                <a class="logo-link" href="#first">
+                    <img src="./img/logo-min.png" alt="">
+                </a>
+            </div>
+            <nav class="header-navigate">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a class="header-nav-menu-item link" href="#second">Page2</a></li>
+                    <li class="header-nav-item"><a class="header-nav-menu-item link" href="#third">Page3</a></li>
+                    <li class="header-nav-item"><a class="header-nav-menu-item link" href="#fourth">Page4</a></li>
+                    <li class="header-nav-item"><a class="header-nav-menu-item link" href="#fifth">Page5</a></li>
+                    <li class="header-nav-item"><a class="header-nav-menu-item link" href="#sixth">Page6</a></li>
+                    <li class="header-nav-item"><a class="header-nav-menu-item link" href="#seventh">Page7</a></li>
+                    <li class="header-nav-item"><a class="header-nav-menu-item link" href="#eighth">Page8</a></li>
+                    <li class="header-nav-item"><a class="header-nav-menu-item link" href="#ninth">Page9</a></li>
+                  </ul>
+            </nav>
+            <div class="header-trident">
+              <svg class="header-trident-svg" width="41" height="68">
+                  <use href="/img/sprite.svg#trident"></use>
+              </svg>
+            </div>
+        </div>
+        </div>
+      </header>
+      <section class="first" id="first">
         <div class="first-wrapper">
           <ul class="first-background">
             <li class="first-logo"><img src="./img/logo.png" alt="" /></li>
@@ -28,17 +55,9 @@
       </section>
     </div>
     <div>
-      <section class="second">
-        <div class="header">
-          <ul class="header-wrap">
-            <li class="header-logo"><img src="./img/logo-min.png" alt="" /></li>
-            <li class="header-trident">
-              <img src="./img/trident.png" alt="" />
-            </li>
-          </ul>
-        </div>
+      <section class="second" id="second">
         <div class="second-hero">
-          <img src="./img/hero.jpg" alt="warrior" />
+          <img class="second-hero-img" src="./img/hero.jpg" alt="warrior" />
         </div>
         <div class="second-wrap">
           <h2 class="second-h2">
@@ -65,15 +84,7 @@
       </section>
     </div>
     <div>
-      <section class="third">
-        <div class="header">
-          <ul class="header-wrap">
-            <li class="header-logo"><img src="./img/logo-min.png" alt="" /></li>
-            <li class="header-trident">
-              <img src="./img/trident.png" alt="" />
-            </li>
-          </ul>
-        </div>
+      <section class="third" id="third">
         <div class="third-gradient"></div>
         <img class="third-elipse1" src="./img/elipse31.png" alt="" />
         <img class="third-elipse2" src="./img/elipse32.png" alt="" />
@@ -101,19 +112,11 @@
       </section>
     </div>
     <div>
-      <section class="fourth">
-        <div class="header">
-          <ul class="header-wrap">
-            <li class="header-logo"><img src="./img/logo-min.png" alt="" /></li>
-            <li class="header-trident">
-              <img src="./img/trident.png" alt="" />
-            </li>
-          </ul>
-        </div>
+      <section class="fourth" id="fourth">
         <div class="fourth-gradient"></div>
-        <img class="fourth-screen1" src="./img/screen4.3.png" alt="" />
-        <img class="fourth-screen2" src="./img/screen4.2.png" alt="" />
-        <img class="fourth-screen3" src="./img/screen4.1.png" alt="" />
+          <img class="fourth-screen" src="./img/fourth-img.png" alt="" />
+          <img class="fourth-screen1" src="./img/screen4.3.png" alt="" />
+          <div class="fourth-text-wrap">
         <h1 class="fourth-h1">Система контролю завдань!</h1>
         <p class="fourth-text">
           Кожній компанії дуже важливим є правильне планування завдань. Завдяки
@@ -124,18 +127,11 @@
           виконання, що гарантує синхронізацію дій. В обох випадках програма
           забезпечує автоматичне сповіщення про майбутнє завдання.
         </p>
+      </div>
       </section>
     </div>
     <div>
-      <section class="fifth">
-        <div class="header">
-          <ul class="header-wrap">
-            <li class="header-logo"><img src="./img/logo-min.png" alt="" /></li>
-            <li class="header-trident">
-              <img src="./img/trident.png" alt="" />
-            </li>
-          </ul>
-        </div>
+      <section class="fifth" id="fifth">
         <div class="fifth-gradient"></div>
         <img class="fifth-companies" src="./img/companies.png" alt="" />
         <h1 class="fifth-h1">Рішення для страхових компаній</h1>
@@ -156,15 +152,7 @@
       </section>
     </div>
     <div>
-      <section class="sixth">
-        <div class="header">
-          <ul class="header-wrap">
-            <li class="header-logo"><img src="./img/logo-min.png" alt="" /></li>
-            <li class="header-trident">
-              <img src="./img/trident.png" alt="" />
-            </li>
-          </ul>
-        </div>
+      <section class="sixth" id="sixth">
         <div class="sixth-gradient"></div>
         <div class="sixth-wrap">
           <div class="sixth-wrap-text">
@@ -182,7 +170,7 @@
             </p>
           </div>
           <div class="sixth-icons">
-            <ul>
+            <ul class="sixth-icons-left">
               <li class="sixth-icons-wrap">
                 <img class="sixth-icons-img" src="./img/dealer.png" alt="" />
                 <p class="sixth-icons-text">Aвтодилери</p>
@@ -217,18 +205,12 @@
       </section>
     </div>
     <div>
-      <section class="seventh">
-        <div class="header">
-          <ul class="header-wrap">
-            <li class="header-logo"><img src="./img/logo-min.png" alt="" /></li>
-            <li class="header-trident">
-              <img src="./img/trident.png" alt="" />
-            </li>
-          </ul>
-        </div>
+      <section class="seventh" id="seventh">
         <div class="seventh-gradient"></div>
-        <img class="seventh-img" src="./img/barber1.png" alt="" />
-        <img class="seventh-img" src="./img/barber2.png" alt="" />
+        <div class="seventh-img-wrap">
+          <img class="seventh-img" src="./img/barber1.png" alt="" />
+          <img class="seventh-img" src="./img/barber2.png" alt="" />
+        </div>
         <h1 class="seventh-h1">Керуйте салоном легко!</h1>
         <div class="seventh-text-wrap">
           <p class="seventh-text">
@@ -251,15 +233,7 @@
       </section>
     </div>
     <div>
-      <section class="eighth">
-        <div class="header">
-          <ul class="header-wrap">
-            <li class="header-logo"><img src="./img/logo-min.png" alt="" /></li>
-            <li class="header-trident">
-              <img src="./img/trident.png" alt="" />
-            </li>
-          </ul>
-        </div>
+      <section class="eighth" id="eighth">
         <div class="eighth-gradient"></div>
         <h1 class="eighth-h1">Товарно-матеріальні цінності-це легко</h1>
         <p class="eighth-text">
@@ -283,19 +257,9 @@
       </section>
     </div>
     <div>
-      <section class="ninth">
-        <div class="header">
-          <ul class="header-wrap">
-            <li class="header-logo logo">
-              <img src="./img/logo-min-dark.png" alt="" />
-            </li>
-            <li class="header-trident">
-              <img src="./img/trident.png" alt="" />
-            </li>
-          </ul>
-        </div>
+      <section class="ninth" id="ninth">
         <div class="ninth-gradient"></div>
-        <div class="flex-wrap">
+        <div class="ninth-flex-wrap">
           <img class="ninth-hero" src="./img/hero9.jpg" alt="" />
           <div class="ninth-text-wrap">
             <p class="ninth-text text1">
@@ -309,9 +273,14 @@
               Різні способи обліку взаємодії з клієнтами застосовуються майже в
               усіх компаніях.
             </p>
+            <div class="mail">
+              <a class="a" href="#">
+                    yesync.ua@gmail.com
+                  </a>
           </div>
         </div>
       </section>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
