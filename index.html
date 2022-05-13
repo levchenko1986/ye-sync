@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>YE SYNC</title>
   </head>
   <link rel="preload" href="/SFProDisplay.OTF" as="font" />
   <link rel="preload" href="/SFProText.ttf" as="font" />
+  <script src="./wow.min.js"></script>
+  <script>new WOW().init();</script>
   <body>
-    <header>
+    <!-- <header>
       <div class="section-header" id="home">
         <div class="header-wrap">
             <div class="header-logo-item">
@@ -36,17 +36,19 @@
             </nav>
             <div class="header-trident">
               <svg class="header-trident-svg" width="41" height="68">
-                  <use href="./img/sprite.svg#trident"></use>
+                  <use href="/img/sprite.svg#trident"></use>
               </svg>
             </div>
         </div>
         </div>
-      </header>
+      </header> -->
       <section class="first" id="first">
         <div class="first-wrapper">
           <ul class="first-background">
-            <li class="first-logo"><img src="./img/logo.png" alt="" /></li>
-            <li class="first-logo-mini">
+            <li data-wow-duration="5s" class="first-logo wow animate__animated animate__fadeIn">
+              <img src="./img/logo.png" alt="" />
+            </li>
+            <li data-wow-duration="5s" class="first-logo-mini wow animate__animated animate__fadeIn">
               <img src="./img/logo-min.png" alt="" />
             </li>
             <li class="first-tagline">CRM, яка допомагає досягти успіху!</li>
@@ -54,8 +56,21 @@
         </div>
       </section>
     </div>
-    <div>
       <section class="second" id="second">
+        <div class="section-header" id="home">
+          <div class="header-wrap">
+              <div class="header-logo-item">
+                  <a class="logo-link" href="#first">
+                      <img src="./img/logo-min.png" alt="">
+                  </a>
+              </div>
+              <div class="header-trident">
+                <svg class="header-trident-svg" width="41" height="68">
+                    <use href="/img/sprite.svg#trident"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         <div class="second-hero">
           <img class="second-hero-img" src="./img/hero.jpg" alt="warrior" />
         </div>
@@ -82,13 +97,24 @@
           </p>
         </div>
       </section>
-    </div>
-    <div>
-      <section class="third" id="third">
+      <section class="third" id="third">        <div class="section-header" id="home">
+        <div class="header-wrap">
+            <div class="header-logo-item">
+                <a class="logo-link" href="#first">
+                    <img src="./img/logo-min.png" alt="">
+                </a>
+            </div>
+            <div class="header-trident">
+              <svg class="header-trident-svg" width="41" height="68">
+                  <use href="/img/sprite.svg#trident"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
         <div class="third-gradient"></div>
         <img class="third-elipse1" src="./img/elipse31.png" alt="" />
         <img class="third-elipse2" src="./img/elipse32.png" alt="" />
-        <img class="third-screen" src="./img/screen.png" alt="" />
+              <img data-wow-duration="5s" class="third-screen wow animate__animated animate__fadeIn" src="./img/screen.png" alt="" />
         <h1 class="third-h1">Ми розробляємо виміряні та перевірені процеси:</h1>
         <ul class="third-wrap-text">
           <li class="third-text">Впроваджує CRM-систему в організації</li>
@@ -110,12 +136,24 @@
           </li>
         </ul>
       </section>
-    </div>
-    <div>
       <section class="fourth" id="fourth">
+        <div class="section-header" id="home">
+          <div class="header-wrap">
+              <div class="header-logo-item">
+                  <a class="logo-link" href="#first">
+                      <img src="./img/logo-min.png" alt="">
+                  </a>
+              </div>
+              <div class="header-trident">
+                <svg class="header-trident-svg" width="41" height="68">
+                    <use href="/img/sprite.svg#trident"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         <div class="fourth-gradient"></div>
-          <img class="fourth-screen" src="./img/fourth-img.png" alt="" />
-          <img class="fourth-screen1" src="./img/screen4.3.png" alt="" />
+          <img data-wow-duration="5s" class="fourth-screen wow animate__animated animate__fadeIn" src="./img/fourth-img.png" alt="" />
+          <img data-wow-duration="5s" class="fourth-screen1 wow animate__animated animate__fadeIn" src="./img/screen4.3.png" alt="" />
           <div class="fourth-text-wrap">
         <h1 class="fourth-h1">Система контролю завдань!</h1>
         <p class="fourth-text">
@@ -129,11 +167,23 @@
         </p>
       </div>
       </section>
-    </div>
-    <div>
       <section class="fifth" id="fifth">
+        <div class="section-header" id="home">
+          <div class="header-wrap">
+              <div class="header-logo-item">
+                  <a class="logo-link" href="#first">
+                      <img src="./img/logo-min.png" alt="">
+                  </a>
+              </div>
+              <div class="header-trident">
+                <svg class="header-trident-svg" width="41" height="68">
+                    <use href="/img/sprite.svg#trident"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         <div class="fifth-gradient"></div>
-        <img class="fifth-companies" src="./img/companies.png" alt="" />
+        <img data-wow-duration="2s" class="fifth-companies wow animate__animated animate__fadeInRight" src="./img/companies.png" alt="" />
         <h1 class="fifth-h1">Рішення для страхових компаній</h1>
         <p class="fifth-text">
           Спростивши управління воронкою продажів за допомогою ефективних
@@ -150,9 +200,21 @@
           агентам закривати більше угод.
         </p>
       </section>
-    </div>
-    <div>
       <section class="sixth" id="sixth">
+        <div class="section-header" id="home">
+          <div class="header-wrap">
+              <div class="header-logo-item">
+                  <a class="logo-link" href="#first">
+                      <img src="./img/logo-min.png" alt="">
+                  </a>
+              </div>
+              <div class="header-trident">
+                <svg class="header-trident-svg" width="41" height="68">
+                    <use href="/img/sprite.svg#trident"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         <div class="sixth-gradient"></div>
         <div class="sixth-wrap">
           <div class="sixth-wrap-text">
@@ -169,7 +231,7 @@
               суміжними бізнесами.
             </p>
           </div>
-          <div class="sixth-icons">
+          <div data-wow-duration="2s" class="sixth-icons wow animate__animated animate__fadeInRight">
             <ul class="sixth-icons-left">
               <li class="sixth-icons-wrap">
                 <img class="sixth-icons-img" src="./img/dealer.png" alt="" />
@@ -200,16 +262,28 @@
             </ul>
           </div>
         </div>
-        <img class="sixth-bmw" src="./img/bmw.png" alt="" />
-        <img class="sixth-audi" src="./img/audi.png" alt="" />
+        <img data-wow-duration="3s" class="sixth-bmw wow animate__animated animate__fadeInUp" src="./img/bmw.png" alt="" />
+        <img data-wow-duration="3s" class="sixth-audi wow animate__animated animate__fadeInUp" src="./img/audi.png" alt="" />
       </section>
-    </div>
-    <div>
       <section class="seventh" id="seventh">
+        <div class="section-header" id="home">
+          <div class="header-wrap">
+              <div class="header-logo-item">
+                  <a class="logo-link" href="#first">
+                      <img src="./img/logo-min.png" alt="">
+                  </a>
+              </div>
+              <div class="header-trident">
+                <svg class="header-trident-svg" width="41" height="68">
+                    <use href="/img/sprite.svg#trident"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         <div class="seventh-gradient"></div>
         <div class="seventh-img-wrap">
-          <img class="seventh-img" src="./img/barber1.png" alt="" />
-          <img class="seventh-img" src="./img/barber2.png" alt="" />
+          <img data-wow-duration="2s" class="seventh-img wow animate__animated animate__fadeInLeft" src="./img/barber1.png" alt="" />
+          <img data-wow-duration="2s" class="seventh-img wow animate__animated animate__fadeInRight" src="./img/barber2.png" alt="" />
         </div>
         <h1 class="seventh-h1">Керуйте салоном легко!</h1>
         <div class="seventh-text-wrap">
@@ -231,9 +305,21 @@
           </p>
         </div>
       </section>
-    </div>
-    <div>
       <section class="eighth" id="eighth">
+        <div class="section-header" id="home">
+          <div class="header-wrap">
+              <div class="header-logo-item">
+                  <a class="logo-link" href="#first">
+                      <img src="./img/logo-min.png" alt="">
+                  </a>
+              </div>
+              <div class="header-trident">
+                <svg class="header-trident-svg" width="41" height="68">
+                    <use href="/img/sprite.svg#trident"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         <div class="eighth-gradient"></div>
         <h1 class="eighth-h1">Товарно-матеріальні цінності-це легко</h1>
         <p class="eighth-text">
@@ -252,18 +338,30 @@
           доходів-витрат. Переглядати план-факт звіти щодо планів
           продажу/закупівель та бюджетів.
         </p>
-        <img class="eighth-img1" src="./img/screen8.1.png" alt="" />
-        <img class="eighth-img2" src="./img/screen8.2.png" alt="" />
+        <img data-wow-duration="5s" class="eighth-img1 wow animate__animated animate__fadeIn" src="./img/screen8.1.png" alt="" />
+        <img data-wow-duration="5s" class="eighth-img2 wow animate__animated animate__fadeIn" src="./img/screen8.2.png" alt="" />
       </section>
-    </div>
-    <div>
       <section class="ninth" id="ninth">
+        <div class="section-header" id="home">
+          <div class="header-wrap">
+              <div class="header-logo-item" style="margin-left: 15px;;">
+                  <a class="logo-link" href="#first">
+                      <img src="./img/logo-min-dark.png" alt="">
+                  </a>
+              </div>
+              <div class="header-trident">
+                <svg class="header-trident-svg dark-trident" width="41" height="68">
+                    <use href="/img/sprite.svg#trident"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
         <div class="ninth-gradient"></div>
         <div class="ninth-flex-wrap">
           <img class="ninth-hero" src="./img/hero9.jpg" alt="" />
           <div class="ninth-text-wrap">
             <p class="ninth-text text1">
-              YESYNC пропонує найкраще рішення CRM для всіх!
+              YE<span style="font-weight: 700; opacity: 1; margin-right: 0;">SYNC</span> пропонує найкраще рішення CRM для всіх!
             </p>
             <p class="ninth-text text2">
               Функціональні можливості охоплюють усі необхідні методи обліку та
@@ -273,14 +371,19 @@
               Різні способи обліку взаємодії з клієнтами застосовуються майже в
               усіх компаніях.
             </p>
-            <div class="mail">
-              <a class="a" href="#">
-                    yesync.ua@gmail.com
-                  </a>
+            <div class="mail wow animate__animated animate__fadeIn">
+              <div>
+                <a data-wow-duration="5s" class="a" href="#">
+                  <span>e-mail:</span>yesybc.ua@gmail.com
+                </a>
+              </div>
+              <div class="tel">
+              <a href="tel:+380951638194" data-wow-duration="5s" class="a">
+                <span>tel:</span>+38 095 163 81 94
+              </a>
+            </div>
           </div>
         </div>
       </section>
-    </div>
-    <script src="./index.js"></script>
   </body>
 </html>
