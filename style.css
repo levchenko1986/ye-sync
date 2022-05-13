@@ -4,21 +4,10 @@
   font-family: SF Pro Text;
   src: url(./fonts/sfprotext.woff2);
 }
-@keyframes ani {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 * {
   box-sizing: border-box;
 }
 body {
-  /* font-family: SF Pro Display, SF Pro Text, sans-serif; */
-  height: 100%;
-  max-width: 100%;
   margin: 0;
 }
 
@@ -36,11 +25,8 @@ section::-webkit-scrollbar {
   width: 0;
 }
 
-.active {
-  opacity: 1;
-}
-
 h1 {
+  font-family: "SF Pro Display", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
@@ -52,13 +38,13 @@ h1 {
   max-width: 100%;
 }
 p {
+  font-family: "SF Pro Text", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 2;
   color: #ffffff;
   opacity: 0.7;
-  /* filter: invert(50%); */
   z-index: 5;
   max-width: 100%;
 }
@@ -84,30 +70,24 @@ p {
 }
 /* ===========HEADER============ */
 
-header {
+/* header {
   position: fixed;
-
-  /* top: 0;
-  left: 0; */
   width: 100%;
   z-index: 1;
-}
+} */
 .section-header {
-  background-color: transparent;
-}
-.header-nav {
+  position: absolute;
+width: 100%;
+
 }
 .header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 67px 82px 10px 82px;
+
+  padding: 67px 0 10px 0;
 }
-.logo-link {
-}
-.header-navigate {
-}
-.header-nav-list {
+/* .header-nav-list {
   display: flex;
   max-width: 100%;
   padding: 0;
@@ -128,14 +108,22 @@ header {
 .header-nav-menu-item:hover,
 .header-nav-menu-item:focus {
   color: #d6b437;
+} */
+.header-logo-item {
+  z-index: 1;
 }
 .header-trident {
+margin-right: 164px;
+ z-index: 1;
 }
+
 .header-trident-svg {
   cursor: pointer;
   fill: #ffffff;
   opacity: 0.7;
   transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
 }
 .header-trident-svg:hover,
 .header-trident-svg:focus {
@@ -143,7 +131,10 @@ header {
 }
 @media screen and (max-width: 768px) {
   .header-wrap {
-    padding: 30px 30px 5px 30px;
+    padding: 30px 0 5px 0;
+  }
+  .header-trident {
+    margin-right: 60px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -153,8 +144,6 @@ header {
 }
 /* ==========First Page========== */
 
-.first {
-}
 .first-wrapper {
   text-align: center;
 }
@@ -165,10 +154,8 @@ header {
   margin: 0;
   padding-left: 0;
 }
-
 .first-logo {
   display: block;
-  animation: ani 3s forwards;
 }
 .first-logo-mini {
   display: none;
@@ -186,12 +173,23 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .first {
+    height: 100vh;
+  }
+  .first-background {
+    padding-top: 55%;
+  }
   .first-logo {
     display: none;
   }
   .first-logo-mini {
     display: block;
     animation: ani 3s forwards;
+  }
+  .first-tagline {
+    font-size: 28px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 
@@ -203,15 +201,11 @@ header {
   padding-right: 82px;
   background-color: #010101;
 }
-.second-wrapper {
-}
-
 .second-hero {
   position: relative;
   width: 100%;
   height: 100%;
   top: 0;
-  /* margin-left: 50%; */
 }
 .second-hero-img {
   position: absolute;
@@ -224,7 +218,7 @@ header {
 }
 
 .second-h2 {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -245,6 +239,7 @@ header {
 .second-text {
   max-width: 735px;
   margin-top: 46px;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -256,14 +251,23 @@ header {
     position: relative;
   }
   .second-wrap {
-    left: auto;
+    left: 0;
     top: 20%;
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .second-text {
     margin-top: 20px;
   }
+.second-h1, .second-h2, .second-text {
+  max-width: 100%;
 }
-
+}
+@media screen and (min-width: 769px) and (max-width: 1919px) {
+  .second-h1, .second-h2, .second-text {
+    line-height: 1.2;
+  }
+}
 /* ==========Third Page========== */
 
 .third {
@@ -301,14 +305,11 @@ header {
   position: absolute;
   top: 138px;
   right: 418px;
-  /* opacity: 0;
-  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1); */
-  /* animation: ani 3s forwards; */
 }
 
 .third-h1 {
   width: 713px;
-  margin-top: 120px;
+  margin-top: 270px;
   margin-bottom: 0;
 }
 
@@ -319,6 +320,7 @@ header {
 }
 
 .third-text {
+  font-family: SF Pro Text, sans-serif;
   list-style-type: disc;
   font-style: normal;
   font-weight: 500;
@@ -376,8 +378,6 @@ header {
   right: 43px;
   max-width: 100vw;
   max-height: auto;
-  /* opacity: 0;
-  animation: ani 3s forwards; */
 }
 
 .fourth-screen1 {
@@ -385,7 +385,7 @@ header {
 }
 .fourth-h1 {
   max-width: 475px;
-  margin-top: 122px;
+  margin-top: 190px;
   margin-right: 0;
   margin-bottom: 0;
 }
@@ -407,7 +407,7 @@ header {
     position: absolute;
     left: 5%;
     max-width: 90%;
-    top: 7%;
+    top: 10%;
     animation: ani 3s forwards;
   }
   .fourth-text-wrap {
@@ -458,7 +458,7 @@ header {
 }
 .fifth-h1 {
   max-width: 575px;
-  margin-top: 122px;
+  margin-top: 190px;
   margin-bottom: 0;
 }
 .fifth-text {
@@ -473,18 +473,19 @@ header {
   }
   .fifth-companies {
     left: 15%;
-    top: 2%;
+    top: 9%;
     max-width: 70%;
   }
   .fifth-h1 {
     max-width: 100%;
-    margin-top: 83%;
+    margin-top: 110%;
     margin-bottom: 0;
     margin-right: 0;
     text-align: center;
   }
   .fifth-text {
     margin-right: 0;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1919px) {
@@ -590,7 +591,7 @@ header {
     margin-top: 0;
   }
   .sixth-wrap-text {
-    margin-top: 15%;
+    margin-top: 32%;
   }
   .sixth-icons-text {
     display: none;
@@ -602,7 +603,7 @@ header {
     margin: 0;
   }
   .sixth-text {
-    margin-top: 60px;
+    margin-top: 35px;
   }
   .sixth-icons {
     display: block;
@@ -632,7 +633,7 @@ header {
   .sixth-bmw {
     display: none;
   }
-  }
+}
 /* ==========Seventh Page========== */
 .sixth-icons-img {
   opacity: 0.5;
@@ -662,10 +663,8 @@ header {
 }
 .seventh-img {
   max-width: 100%;
-  margin-top: 90px;
+  margin-top: 230px;
   border-radius: 4px;
-  opacity: 0;
-  animation: ani 3s forwards;
 }
 .seventh-img:not(:last-child) {
   margin-right: 5px;
@@ -693,7 +692,7 @@ header {
   .seventh-img {
     max-width: 100%;
     left: 50%;
-    margin-top: 30px;
+    margin-top: 120px;
   }
   .seventh-h1 {
     margin-top: 4%;
@@ -733,7 +732,7 @@ header {
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 .eighth-h1 {
-  margin-top: 122px;
+  margin-top: 242px;
   margin-bottom: 18px;
 }
 .eighth-text {
@@ -755,7 +754,7 @@ header {
     padding-right: 30px;
   }
   .eighth-h1 {
-    margin-top: 2%;
+    margin-top: 33%;
     max-width: 100%;
   }
   .eighth-text {
@@ -809,16 +808,11 @@ header {
   margin-left: -82px;
   margin-right: 4%;
 }
-.logo {
-}
-.ninth-text-wrap {
-  margin-right: 10%;
-}
 .ninth-text {
   font-size: 36px;
 }
 .text1 {
-  margin-top: 90px;
+  margin-top: 180px;
   margin-bottom: 0;
   max-width: 950px;
 }
@@ -828,10 +822,16 @@ header {
   max-width: 880px;
 }
 .mail {
+  margin-top: 100px;
   text-align: left;
   cursor: pointer;
 }
-.a {
+.a {  
+  font-family: "SF Pro Display", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.2;
   margin-top: 30px;
   text-decoration: none;
   color: #ffffff;
@@ -840,12 +840,25 @@ header {
   line-height: 1;
   cursor: pointer;
 }
+span {
+  margin-right: 15px;
+  opacity: 0.8;
+}
+.tel {
+  margin-top: 15px;
+}
 
 @media screen and (max-width: 768px) {
   .ninth {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .dark-trident {
+    fill: black;
+  }
+  .header-trident {
+    margin-right: 75px;
+}
   .ninth-flex-wrap {
     display: block;
     position: relative;
@@ -875,14 +888,14 @@ header {
     margin-bottom: 0;
   }
   .mail {
-    margin-top: 2%;
+    margin-top: 10%;
     text-align: center;
   }
   .a {
     margin-top: 30px;
     text-decoration: none;
     color: #ffffff;
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1919px) {
@@ -897,7 +910,7 @@ header {
     margin-left: 5%;
   }
   .mail {
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
   }
 }
